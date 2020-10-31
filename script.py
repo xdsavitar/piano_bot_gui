@@ -14,14 +14,11 @@ import random
 delayforMouse = 0.0
 ypixelpos = 700
 
-time.sleep(3)
-
-
 def mouse_event(x,y):
     global delayforMouse
     win32api.SetCursorPos((x,y))
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
-    time.sleep(0.1)
+    time.sleep(0.001)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
     print("Clicked a TIle")
 

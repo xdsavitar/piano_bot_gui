@@ -26,6 +26,9 @@ def mainwindow():
     rgb_color_picker = Button(mainw,text="RGB Color Picker",command=lambda: intiate_rgb_color())
     rgb_color_picker.place(relx=0.33,rely=0.1)
 
+    tile_pos = Button(mainw,text="X,Y Position")
+    tile_pos.place(relx=0.33,rely=0.3)
+
     #Current Settings
     
     delay_between_clicks = Label(mainw,text="Delay Interval: ")
@@ -89,6 +92,18 @@ def save_script(r_value_entry,delay_Entry,win):
     mainwindow()
 
 
+def xyPosWindow():
+    winx = Tk()
+    winx.geometry("150x200")
+
+    #For Later Purposes
+
+
+    winx.mainloop()
+
+
+
 
 if __name__ == "__main__":
-    mainwindow()
+    #mainwindow()
+    xyPosWindow()
